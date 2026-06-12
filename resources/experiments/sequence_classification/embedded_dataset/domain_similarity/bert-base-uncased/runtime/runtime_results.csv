@@ -1,0 +1,2 @@
+,dataset,embedding_method,probe_model,number_of_samples,batch_size,time_total
+0,glue/cola,domain_similarity,bert-base-uncased,8551,16,822.8171811103821
