@@ -133,10 +133,10 @@ def parse_model_card(row):
 def find_models_for_dataset(api, dataset_name, pipeline_tag="text-classification", max_models=500):
     try:
         models = api.list_models(
-            trained_dataset=dataset_name,
-            sort="downloads",
-            limit=max_models
-        )
+        filter=f"dataset:{dataset_name}",
+        sort="downloads",
+        limit=max_models
+    )
         return list(models)
     except Exception as e:
         print(f"  Error querying models for dataset '{dataset_name}': {e}")
