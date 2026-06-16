@@ -167,39 +167,46 @@ def find_models_for_dataset(api, dataset_name, pipeline_tag="text-classification
         print(f"  Error querying models for dataset '{dataset_name}': {e}")
         return []
 
-def extract_model_info_from_api(api, model_id):
-    try:
-        card = ModelCard.load(model_id)
-        card_text = card.text if card else ""
-        tags_str, readme_str = separate_tags_and_readme(card_text)
-        yaml_data = parse_yaml_tags(tags_str)
-        readme_data = parse_readme_body(readme_str)
-        all_datasets = []
-        if yaml_data["datasets"]:
-            for d in yaml_data["datasets"]:
-                if d and d not in all_datasets:
+
+def extract_model_info_from_api(api, model_id, retries=3):
+    for attempt in range(retries):
+        try:
+            card = ModelCard.load(model_id)
+            card_text = card.text if card else ""
+            tags_str, readme_str = separate_tags_and_readme(card_text)
+            yaml_data = parse_yaml_tags(tags_str)
+            readme_data = parse_readme_body(readme_str)
+            all_datasets = []
+            if yaml_data["datasets"]:
+                for d in yaml_data["datasets"]:
+                    if d and d not in all_datasets:
+                        all_datasets.append(d)
+            for d in readme_data["datasets_readme"]:
+                if d not in all_datasets:
                     all_datasets.append(d)
-        for d in readme_data["datasets_readme"]:
-            if d not in all_datasets:
-                all_datasets.append(d)
-        model_info = api.model_info(model_id)
-        return {
-            "model":              model_id,
-            "base_model": infer_base_model(yaml_data["base_model"], model_info.config),
-            "finetuned_datasets": all_datasets,
-            "eval_accuracy":      readme_data["eval_accuracy"],
-            "task_type":          model_info.pipeline_tag if hasattr(model_info, "pipeline_tag") else None,
-            "learning_rate":      readme_data["learning_rate"],
-            "batch_size":         readme_data["batch_size"],
-            "num_epochs":         readme_data["num_epochs"],
-            "created_at":         model_info.created_at if hasattr(model_info, "created_at") else None,
-            "last_modified":      model_info.lastModified if hasattr(model_info, "lastModified") else None,
-            "license":            yaml_data["license"],
-            "downloads":          model_info.downloads if hasattr(model_info, "downloads") else 0,
-        }
-    except Exception as e:
-        print(f"  Error extracting info for model '{model_id}': {e}")
-        return None
+            model_info = api.model_info(model_id)
+            return {
+                "model":              model_id,
+                "base_model": infer_base_model(yaml_data["base_model"], model_info.config),
+                "finetuned_datasets": all_datasets,
+                "eval_accuracy":      readme_data["eval_accuracy"],
+                "task_type":          model_info.pipeline_tag if hasattr(model_info, "pipeline_tag") else None,
+                "learning_rate":      readme_data["learning_rate"],
+                "batch_size":         readme_data["batch_size"],
+                "num_epochs":         readme_data["num_epochs"],
+                "created_at":         model_info.created_at if hasattr(model_info, "created_at") else None,
+                "last_modified":      model_info.lastModified if hasattr(model_info, "lastModified") else None,
+                "license":            yaml_data["license"],
+                "downloads":          model_info.downloads if hasattr(model_info, "downloads") else 0,
+            }
+        except Exception as e:
+            if "429" in str(e) and attempt < retries - 1:
+                wait = 60 * (attempt + 1)
+                print(f"  Rate limited, waiting {wait}s before retry...")
+                time.sleep(wait)
+            else:
+                print(f"  Error extracting info for model '{model_id}': {e}")
+                return None
 
 # CHANGED: helper to build one flat CSV row, with row_type for lineage tracking
 def _make_row(parsed, dataset_name, row_type="finetune"):
@@ -319,7 +326,7 @@ def collect_by_dataset_approach(target_records=7500):
             if dataset_model_counts[dataset_name] % 20 == 0:
                 print(f"    Collected {dataset_model_counts[dataset_name]} models, total rows: {len(flat_rows)}")
 
-            time.sleep(0.1)
+            time.sleep(0.4)
 
     print(f"\n=== COLLECTION COMPLETE ===")
     print(f"Total records: {len(flat_rows)}")
