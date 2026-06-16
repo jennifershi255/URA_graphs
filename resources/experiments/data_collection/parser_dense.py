@@ -157,11 +157,12 @@ def parse_model_card(row):
 
 def find_models_for_dataset(api, dataset_name, pipeline_tag="text-classification", max_models=500):
     try:
+        dataset_name_clean = dataset_name.split(" [")[0].strip()
         models = api.list_models(
-        filter=f"dataset:{dataset_name}",
-        sort="downloads",
-        limit=max_models
-    )
+            filter=f"dataset:{dataset_name_clean}",
+            sort="downloads",
+            limit=max_models
+        )
         return list(models)
     except Exception as e:
         print(f"  Error querying models for dataset '{dataset_name}': {e}")
@@ -258,6 +259,19 @@ def collect_by_dataset_approach(target_records=7500):
         and not ds.startswith("**")
         and ds.lower() not in JUNK_DATASETS
     ]
+    top_datasets_raw = [
+    ds for ds, count in dataset_counts.most_common(50)
+    if count >= 5
+    and not ds.startswith("**")
+    and ds.lower() not in JUNK_DATASETS
+    ]
+    seen = set()
+    top_datasets = []
+    for ds in top_datasets_raw:
+        clean = ds.split(" [")[0].strip()
+        if clean not in seen:
+            seen.add(clean)
+            top_datasets.append(clean)
     top_datasets_set = set(top_datasets)
 
     print(f"\nFound {len(top_datasets)} popular datasets")
