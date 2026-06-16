@@ -8,12 +8,37 @@ import time
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
+DOTENV_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', '..', '.env')
+load_dotenv(DOTENV_PATH)
 
 HF_TOKEN = os.getenv("HF_TOKEN")
 api = HfApi(token=HF_TOKEN)
 FIXED_TIMESTAMP = "2026-01-01"
 TARGET_RECORDS = 5000
+
+MODEL_TYPE_TO_BASE = {
+    "distilbert": "distilbert-base-uncased",
+    "bert":       "bert-base-uncased",
+    "roberta":    "roberta-base",
+    "albert":     "albert-base-v2",
+    "xlnet":      "xlnet-base-cased",
+    "deberta":    "microsoft/deberta-base",
+    "deberta-v2": "microsoft/deberta-v2-xlarge",
+    "electra":    "google/electra-base-discriminator",
+    "camembert":  "camembert-base",
+    "xlm-roberta":"xlm-roberta-base",
+}
+
+def infer_base_model(yaml_base_model, config):
+    # Prefer explicit declaration in card YAML
+    if yaml_base_model:
+        return yaml_base_model
+    # Fall back to model_type → canonical base
+    if config and isinstance(config, dict):
+        model_type = config.get("model_type")
+        if model_type and model_type in MODEL_TYPE_TO_BASE:
+            return MODEL_TYPE_TO_BASE[model_type]
+    return None
 
 def separate_tags_and_readme(card_content):
     tags, readme = None, None
@@ -160,7 +185,7 @@ def extract_model_info_from_api(api, model_id):
         model_info = api.model_info(model_id)
         return {
             "model":              model_id,
-            "base_model":         yaml_data["base_model"],
+            "base_model": infer_base_model(yaml_data["base_model"], model_info.config),
             "finetuned_datasets": all_datasets,
             "eval_accuracy":      readme_data["eval_accuracy"],
             "task_type":          model_info.pipeline_tag if hasattr(model_info, "pipeline_tag") else None,
@@ -219,8 +244,15 @@ def collect_by_dataset_approach(target_records=7500):
         for ds_name in parsed["finetuned_datasets"]:
             dataset_counts[ds_name] += 1
 
-    top_datasets = [ds for ds, count in dataset_counts.most_common(50) if count >= 5]
+    JUNK_DATASETS = {"custom", "a custom", "the dataset", "my dataset", ""}
+    top_datasets = [
+        ds for ds, count in dataset_counts.most_common(50)
+        if count >= 5
+        and not ds.startswith("**")
+        and ds.lower() not in JUNK_DATASETS
+    ]
     top_datasets_set = set(top_datasets)
+
     print(f"\nFound {len(top_datasets)} popular datasets")
     print(f"Top 10: {top_datasets[:10]}")
 
