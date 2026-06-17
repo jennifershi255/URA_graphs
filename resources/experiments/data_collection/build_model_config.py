@@ -14,16 +14,20 @@ RECORDS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 's
 OUTPUT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'sequence_classification', 'model_config_dataset.csv')
 
 MODEL_TYPE_TO_PARAMS = {
-    "distilbert": 66_000_000,
-    "bert":       110_000_000,
-    "roberta":    125_000_000,
-    "albert":     12_000_000,
-    "xlnet":      117_000_000,
-    "deberta":    139_000_000,
-    "deberta-v2": 900_000_000,
-    "electra":    14_000_000,
-    "camembert":  125_000_000,
-    "xlm-roberta":125_000_000,
+    "distilbert":  66_000_000,
+    "bert":        110_000_000,
+    "roberta":     125_000_000,
+    "albert":      12_000_000,
+    "xlnet":       117_000_000,
+    "deberta":     139_000_000,
+    "deberta-v2":  900_000_000,
+    "electra":     14_000_000,
+    "camembert":   125_000_000,
+    "xlm-roberta": 125_000_000,
+    "gpt2":        117_000_000,
+    "llama":       7_000_000_000,
+    "modernbert":  149_000_000,
+    "gpt_neox":    20_000_000_000,
 }
 
 def get_num_parameters(config):
