@@ -13,6 +13,19 @@ api = HfApi(token=HF_TOKEN)
 RECORDS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'sequence_classification', 'records.csv')
 OUTPUT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'sequence_classification', 'model_config_dataset.csv')
 
+MODEL_TYPE_TO_PARAMS = {
+    "distilbert": 66_000_000,
+    "bert":       110_000_000,
+    "roberta":    125_000_000,
+    "albert":     12_000_000,
+    "xlnet":      117_000_000,
+    "deberta":    139_000_000,
+    "deberta-v2": 900_000_000,
+    "electra":    14_000_000,
+    "camembert":  125_000_000,
+    "xlm-roberta":125_000_000,
+}
+
 def get_num_parameters(config):
     """Estimate parameter count from config if possible."""
     if not config or not isinstance(config, dict):
@@ -35,7 +48,7 @@ def fetch_model_config(model_id, retries=3):
             architectures = config.get("architectures", [])
             architecture = architectures[0] if architectures else None
             model_type = config.get("model_type", None)
-            num_params = get_num_parameters(config)
+            num_params = get_num_parameters(config) or MODEL_TYPE_TO_PARAMS.get(model_type)
             return {
                 "model": model_id,
                 "architectures": architecture,
