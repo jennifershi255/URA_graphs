@@ -60,7 +60,7 @@ class HuggingFaceDatasetBuilder:
             if "alias" in self.config:
                 all_dataset = load_dataset(self.config["alias"], cache_dir=self.cache_directory)
             else:
-                all_dataset = load_dataset(self.dataset_path, self.dataset_name, cache_dir=self.cache_directory)
+                all_dataset = load_dataset(self.dataset_path, self.dataset_name, cache_dir=self.cache_directory, verification_mode='no_checks')
         elif source == 'local':
             file_type = self.config["type"]
             train_path = os.path.join(get_root_path_string(), self.config["train_path"])
