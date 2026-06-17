@@ -237,6 +237,78 @@ ALL_DATASET_CONFIG = {
         "feature_key": "webp",
         "label_key": "cls"
     },
+    "emotion": {
+    "source": "huggingface",
+    "all_feature_key": ["text"]
+    },
+    "go_emotions": {
+        "source": "huggingface",
+        "all_feature_key": ["text"]
+    },
+    "google-research-datasets/go_emotions": {
+        "source": "huggingface",
+        "all_feature_key": ["text"]
+    },
+    "sst2": {
+        "source": "huggingface",
+        "all_feature_key": ["sentence"]
+    },
+    "stanfordnlp/imdb": {
+        "source": "huggingface",
+        "all_feature_key": ["text"]
+    },
+    "google/boolq": {
+        "source": "huggingface",
+        "all_feature_key": ["question", "passage"]
+    },
+    "nsmc": {
+        "source": "huggingface",
+        "all_feature_key": ["document"]
+    },
+    "AI-Secure/PolyGuard": {
+        "source": "huggingface",
+        "all_feature_key": ["prompt"]
+    },
+    "ToxicityPrompts/PolyGuardMix": {
+        "source": "huggingface",
+        "all_feature_key": ["prompt"]
+    },
+    "lmsys/toxic-chat": {
+        "source": "huggingface",
+        "all_feature_key": ["user_input"]
+    },
+    "nvidia/Aegis-AI-Content-Safety-Dataset-2.0": {
+        "source": "huggingface",
+        "all_feature_key": ["text"]
+    },
+    "enguard/multi-lingual-prompt-moderation": {
+        "source": "huggingface",
+        "all_feature_key": ["prompt"]
+    },
+    "visolex/vihsd": {
+        "source": "huggingface",
+        "all_feature_key": ["free_text"]
+    },
+    "Intel/polite-guard": {
+        "source": "huggingface",
+        "all_feature_key": ["text"]
+    },
+    "trl-internal-testing/tldr-preference-sft-trl-style": {
+        "source": "huggingface",
+        "all_feature_key": ["prompt"]
+    },
+    "Tevatron/msmarco-passage": {
+        "source": "huggingface",
+        "all_feature_key": ["query"]
+    },
+    "contemmcm/hate-speech-and-offensive-language": {
+        "source": "huggingface",
+        "all_feature_key": ["text"]
+    },
+    "contemmcm/clickbait": {
+        "source": "huggingface",
+        "all_feature_key": ["text"]
+    },
 }
 
 
