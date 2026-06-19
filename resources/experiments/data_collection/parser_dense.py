@@ -309,6 +309,10 @@ def collect_by_dataset_approach(target_records=7500):
             if not parsed:
                 continue
 
+            # Skip models missing required fields
+            if parsed["base_model"] is None or parsed["eval_accuracy"] is None:
+                continue
+
             # Primary edge: fine-tuned model → queried dataset
             flat_rows.append(_make_row(parsed, dataset_name, row_type="finetune"))
             dataset_model_counts[dataset_name] += 1
