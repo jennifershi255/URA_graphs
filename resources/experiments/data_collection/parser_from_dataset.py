@@ -153,7 +153,7 @@ def load_checkpoint(path: str) -> dict:
     return {
         "dataset_offset": 0,          # how many datasets we've already scanned
         "seen_datasets": [],          # dataset ids already processed
-        "seen_models": [],            # model ids already written to CSV
+        # "seen_models": [],            # model ids already written to CSV
         "usable_row_count": 0,        # rows written so far
         "round_number": 0,
     }
@@ -193,7 +193,7 @@ def run(args):
         print("\n▶ Starting fresh.\n")
 
     seen_datasets = set(state["seen_datasets"])
-    seen_models   = set(state["seen_models"])
+    # seen_models   = set(state["seen_models"])
 
     csv_file, writer = open_csv(args.output, resume=resuming)
 
@@ -264,11 +264,11 @@ def run(args):
 
                 for m in models:
                     model_id = m.id
-                    if model_id in seen_models:
-                        continue
+                    # if model_id in seen_models:
+                    #     continue
 
                     parsed = parse_model(model_id, m, ds_id)
-                    seen_models.add(model_id)
+                    # seen_models.add(model_id)
 
                     if parsed["eval_accuracy"] is not None and parsed["base_model"]:
                         writer.writerow(parsed)
@@ -282,7 +282,7 @@ def run(args):
                 if state["usable_row_count"] >= args.target_rows:
                     break
 
-            state["seen_models"] = list(seen_models)
+            # state["seen_models"] = list(seen_models)
 
             # ── checkpoint after each round ───────────────────────────────
             save_checkpoint(args.checkpoint, state)
@@ -292,7 +292,7 @@ def run(args):
 
     except KeyboardInterrupt:
         print("\n\n⚠  Interrupted! Saving checkpoint before exit…")
-        state["seen_models"] = list(seen_models)
+        # state["seen_models"] = list(seen_models)
         save_checkpoint(args.checkpoint, state)
         print(f"   Checkpoint saved to {args.checkpoint}. "
               f"Re-run the script to resume.")
