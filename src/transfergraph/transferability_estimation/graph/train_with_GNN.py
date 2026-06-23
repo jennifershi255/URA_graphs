@@ -34,7 +34,7 @@ def train(model, train_data, graph_type='hetero', label_type=[], gnn_method='lr_
 
     if 'e2e' in gnn_method:
         L_fn = nn.MSELoss()
-    elif 'xgb' in gnn_method or 'lr' in gnn_method or 'rf' in gnn_method:
+    elif 'xgb' in gnn_method or 'lr' in gnn_method or 'rf' in gnn_method or 'SAGEConv' in gnn_method:
         L_fn = F.binary_cross_entropy_with_logits
     else:
         raise Exception(f"Unexpected gnn_method {gnn_method}")
