@@ -82,11 +82,12 @@ def main():
             print(f"  Progress: {i}/{len(unique_models)}")
         result = fetch_model_config(model_id)
         if result:
-            # Add dataset and accuracy from records
             model_records = records[records['model'] == model_id]
-            result['dataset'] = model_records['finetuned_dataset'].iloc[0]
-            result['accuracy'] = model_records['eval_accuracy'].iloc[0] if 'eval_accuracy' in model_records.columns else None
-            rows.append(result)
+            for _, rec in model_records.iterrows():
+                row = dict(result)
+                row['dataset'] = rec['finetuned_dataset']
+                row['accuracy'] = rec['eval_accuracy'] if 'eval_accuracy' in model_records.columns else None
+                rows.append(row)
         time.sleep(0.4)
 
     df = pd.DataFrame(rows)
