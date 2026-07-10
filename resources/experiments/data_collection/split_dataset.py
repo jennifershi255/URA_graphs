@@ -10,9 +10,10 @@ df = df[["model", "dataset", "value"]]
 # Rename value column
 df = df.rename(columns={"value": "eval_accuracy"})
 
-# Convert percentage values (0-100) to 0-1
-if df["eval_accuracy"].max() > 1:
-    df["eval_accuracy"] = df["eval_accuracy"] / 100.0
+# Convert percentage values (0-100) to 0-1 only for rows that are greater than 1
+mask = df["eval_accuracy"] > 1
+if mask.any():
+    df.loc[mask, "eval_accuracy"] = df.loc[mask, "eval_accuracy"] / 100.0
 
 # Optional: remove duplicate model-dataset pairs if needed
 # (keep first evaluation if multiple metrics exist)
