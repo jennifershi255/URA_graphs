@@ -33,13 +33,14 @@ qa_filtered = qa_top100_dataset.filter(
 )
 
 # Remove dataset_desp column
-if "dataset_desp" in qa_filtered.column_names:
-    qa_filtered = qa_filtered.remove_columns("dataset_desp")
+# if "dataset_desp" in qa_filtered.column_names:
+#     qa_filtered = qa_filtered.remove_columns("dataset_desp")
 
 # Print summary
 print(f"Unique datasets kept: {len(set(qa_filtered['dataset']))}")
 print(f"Unique models kept: {len(set(qa_filtered['model']))}")
 print(f"Total rows: {len(qa_filtered)}")
+
 
 # Save result
 qa_filtered.to_csv("modellens_data/question_answering_top100_datasets_models_over40.csv", index=False)
