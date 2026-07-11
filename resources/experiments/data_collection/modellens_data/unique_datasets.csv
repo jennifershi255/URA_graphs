@@ -1,0 +1,138 @@
+dataset,dataset_desp
+ARC (AI2 Reasoning Challenge),"The AI2’s Reasoning Challenge (**ARC**) dataset is a multiple-choice question-answering dataset, containing questions from science exams from grade 3 to grade 9. The dataset is split in two partitions: Easy and Challenge, where the latter partition contains the more difficult questions that require reasoning. Most of the questions have 4 answer choices, with <1% of all the questions having either 3 or 5 answer choices. ARC includes a supporting KB of 14.3M unstructured text passages. Source: Image Source:"
+ARC (tr),
+bbh_boolean_expressions,"Big Bench Hard (BBH) is a collection of challenging reasoning tasks for large language models across domains such as language understanding, mathematical reasoning, and commonsense/world knowledge.
+
+This is a subset on Logical reasoning over Boolean algebra and propositional logic."
+bbh_causal_judgement,"Big Bench Hard (BBH) is a collection of challenging reasoning tasks for large language models across domains such as language understanding, mathematical reasoning, and commonsense/world knowledge.
+
+This is a subset on Evaluating causal reasoning and cause–effect understanding."
+bbh_date_understanding,"Big Bench Hard (BBH) is a collection of challenging reasoning tasks for large language models across domains such as language understanding, mathematical reasoning, and commonsense/world knowledge.
+
+This is a subset on Reasoning about dates, time, and temporal order."
+bbh_disambiguation_qa,"Big Bench Hard (BBH) is a collection of challenging reasoning tasks for large language models across domains such as language understanding, mathematical reasoning, and commonsense/world knowledge.
+
+This is a subset on Resolving ambiguity and contextual meaning in question answering."
+bbh_formal_fallacies,"Big Bench Hard (BBH) is a collection of challenging reasoning tasks for large language models across domains such as language understanding, mathematical reasoning, and commonsense/world knowledge.
+
+This is a subset on Identifying and analyzing formal logical fallacies."
+bbh_geometric_shapes,"Big Bench Hard (BBH) is a collection of challenging reasoning tasks for large language models across domains such as language understanding, mathematical reasoning, and commonsense/world knowledge.
+
+This is a subset on Reasoning about geometric shapes and spatial properties."
+bbh_hyperbaton,"Big Bench Hard (BBH) is a collection of challenging reasoning tasks for large language models across domains such as language understanding, mathematical reasoning, and commonsense/world knowledge.
+
+This is a subset on Understanding linguistic constructions with word order variations."
+bbh_logical_deduction_five_objects,"Big Bench Hard (BBH) is a collection of challenging reasoning tasks for large language models across domains such as language understanding, mathematical reasoning, and commonsense/world knowledge.
+
+This is a subset on Multi-step logical deduction with five entities."
+bbh_logical_deduction_seven_objects,"Big Bench Hard (BBH) is a collection of challenging reasoning tasks for large language models across domains such as language understanding, mathematical reasoning, and commonsense/world knowledge.
+
+This is a subset on Multi-step logical deduction with seven entities."
+bbh_logical_deduction_three_objects,"Big Bench Hard (BBH) is a collection of challenging reasoning tasks for large language models across domains such as language understanding, mathematical reasoning, and commonsense/world knowledge.
+
+This is a subset on Multi-step logical deduction with three entities."
+bbh_movie_recommendation,"Big Bench Hard (BBH) is a collection of challenging reasoning tasks for large language models across domains such as language understanding, mathematical reasoning, and commonsense/world knowledge.
+
+This is a subset on Reasoning about user preferences and recommendation constraints."
+bbh_navigate,"Big Bench Hard (BBH) is a collection of challenging reasoning tasks for large language models across domains such as language understanding, mathematical reasoning, and commonsense/world knowledge.
+
+This is a subset on Following navigation-style instructions and spatial reasoning."
+bbh_object_counting,"Big Bench Hard (BBH) is a collection of challenging reasoning tasks for large language models across domains such as language understanding, mathematical reasoning, and commonsense/world knowledge.
+
+This is a subset on Counting and quantitative reasoning over objects."
+bbh_penguins_in_a_table,"Big Bench Hard (BBH) is a collection of challenging reasoning tasks for large language models across domains such as language understanding, mathematical reasoning, and commonsense/world knowledge.
+
+This is a subset on Table-based reasoning and relational inference."
+bbh_reasoning_about_colored_objects,"Big Bench Hard (BBH) is a collection of challenging reasoning tasks for large language models across domains such as language understanding, mathematical reasoning, and commonsense/world knowledge.
+
+This is a subset on Multi-attribute reasoning involving colors and shapes."
+bbh_ruin_names,"Big Bench Hard (BBH) is a collection of challenging reasoning tasks for large language models across domains such as language understanding, mathematical reasoning, and commonsense/world knowledge.
+
+This is a subset on Reasoning over linguistic transformations and name analogies."
+bbh_salient_translation_error_detection,"Big Bench Hard (BBH) is a collection of challenging reasoning tasks for large language models across domains such as language understanding, mathematical reasoning, and commonsense/world knowledge.
+
+This is a subset on Identifying salient translation errors."
+bbh_snarks,"Big Bench Hard (BBH) is a collection of challenging reasoning tasks for large language models across domains such as language understanding, mathematical reasoning, and commonsense/world knowledge.
+
+This is a subset on Interpreting figurative language, sarcasm, and snark."
+bbh_sports_understanding,"Big Bench Hard (BBH) is a collection of challenging reasoning tasks for large language models across domains such as language understanding, mathematical reasoning, and commonsense/world knowledge.
+
+This is a subset on Commonsense reasoning about sports and rules."
+bbh_temporal_sequences,"Big Bench Hard (BBH) is a collection of challenging reasoning tasks for large language models across domains such as language understanding, mathematical reasoning, and commonsense/world knowledge.
+
+This is a subset on Understanding temporal sequences and event order."
+bbh_tracking_shuffled_objects_five_objects,"Big Bench Hard (BBH) is a collection of challenging reasoning tasks for large language models across domains such as language understanding, mathematical reasoning, and commonsense/world knowledge.
+
+This is a subset on Tracking shuffled objects in reasoning tasks with five entities."
+bbh_tracking_shuffled_objects_seven_objects,"Big Bench Hard (BBH) is a collection of challenging reasoning tasks for large language models across domains such as language understanding, mathematical reasoning, and commonsense/world knowledge.
+
+This is a subset on Tracking shuffled objects in reasoning tasks with seven entities."
+bbh_tracking_shuffled_objects_three_objects,"Big Bench Hard (BBH) is a collection of challenging reasoning tasks for large language models across domains such as language understanding, mathematical reasoning, and commonsense/world knowledge.
+
+This is a subset on Tracking shuffled objects in reasoning tasks with three entities."
+bbh_web_of_lies,"Big Bench Hard (BBH) is a collection of challenging reasoning tasks for large language models across domains such as language understanding, mathematical reasoning, and commonsense/world knowledge.
+
+This is a subset on Reasoning about factual consistency and deception detection."
+Big-bench Hard,"Big-Bench-Hard (BBH) is a challenging benchmark dataset composed of 1,060 diverse, high-difficulty tasks designed to evaluate the reasoning and generalization capabilities of language models. It includes tasks that require complex reasoning, domain-specific knowledge, and multi-step problem-solving, making it a key benchmark for assessing zero-shot and few-shot learning performance. The dataset is used to evaluate how well language models—particularly smaller ones—can solve unseen, real-world problems without prior training on those tasks. In conjunction with the CoT Collection, which provides 1.84 million chain-of-thought (CoT) rationales across these tasks, BBH enables fine-tuning of models to improve step-by-step reasoning. Studies show that instruction-tuned models, such as Flan-T5, achieve significant gains in zero-shot accuracy—up to +4.34%"
+BigBench Hard 3-shot,
+"BigBenchHard (3 shot, CoT)",
+DROP Test,"DROP Test is a benchmark dataset for reading comprehension and discrete reasoning in natural language processing. It contains a large set of adversarially crafted questions derived from paragraphs, requiring models to resolve references across multiple text positions and perform discrete operations such as addition, counting, or sorting. The dataset emphasizes deeper understanding beyond simple fact retrieval, making it more challenging than standard reading comprehension tasks. All questions are in English and crowdsourced to ensure diversity and realism. Models are evaluated using F1 and exact match metrics, with expert human performance significantly outperforming current state-of-the-art systems. DROP Test serves as a critical benchmark for assessing a model's ability to perform complex, real-world reasoning tasks and generalize effectively."
+gpqa,
+GPQA,"**GPQA** stands for **Graduate-Level Google-Proof Q&A Benchmark**. It's a challenging dataset designed to evaluate the capabilities of **Large Language Models (LLMs)** and scalable oversight mechanisms. Let me provide more details about it: - **Description**: GPQA consists of **448 multiple-choice questions** meticulously crafted by domain experts in **biology, physics, and chemistry**. These questions are intentionally designed to be **high-quality and extremely difficult**. - **Expert Accuracy**: Even experts who hold or are pursuing **PhDs in the corresponding domains** achieve only **65% accuracy** on these questions (or **74%** when excluding clear mistakes identified in retrospect). - **Google-Proof**: The questions are ""Google-proof,"" meaning that even with **unrestricted access to the web**, highly skilled non-expert validators only reach an accuracy of **34%** despite spending over 30 minutes searching for answers. - **AI Systems Difficulty**: State-of-the-art AI systems, including our strongest **GPT-4 based baseline**, achieve only **39% accuracy** on this challenging dataset. The difficulty of GPQA for both skilled non-experts and cutting-edge AI systems makes it an excellent resource for conducting **realistic scalable oversight experiments**. These experiments aim to explore ways for human experts to reliably obtain truthful information from AI systems that surpass human capabilities¹³. In summary, GPQA serves as a valuable benchmark for assessing the robustness and limitations of language models, especially when faced with complex and nuanced questions. Its difficulty level encourages research into effective oversight methods, bridging the gap between AI and human expertise. (1) [2311.12022] GPQA: A Graduate-Level Google-Proof Q&A Benchmark - arXiv.org. (2) GPQA: A Graduate-Level Google-Proof Q&A Benchmark — Klu. (3) GPA Dataset (Spring 2010 through Spring 2020) - Data Science Discovery. (4) GPQA: A Graduate-Level Google-Proof Q&A Benchmark - GitHub. (5) Data Sets - OpenIntro. (6) undefined. (7) undefined."
+"GPQA (0-shot, CoT)",
+gpqa_diamond,"Graduate-Level Google-Proof Q&A (GPQA) consists of PhD-level multiple-choice questions in science domains, including chemistry, biology, and physics, to evaluate expert-level reasoning and factual knowledge without relying on web retrieval.
+
+This is a subset on The most challenging GPQA tier requiring advanced scientific reasoning."
+gpqa_extended,"Graduate-Level Google-Proof Q&A (GPQA) consists of PhD-level multiple-choice questions in science domains, including chemistry, biology, and physics, to evaluate expert-level reasoning and factual knowledge without relying on web retrieval.
+
+This is a subset on The extended version of GPQA with additional science questions."
+math_algebra_hard,"Mathematics Aptitude Test of Heuristics (MATH, Level 5) contains high-school competition problems covering complex algebra, geometry, and advanced calculus, designed to test mathematical reasoning ability.
+
+This is a subset on Hard-level problems in algebra and symbolic manipulation."
+math_counting_and_prob_hard,"Mathematics Aptitude Test of Heuristics (MATH, Level 5) contains high-school competition problems covering complex algebra, geometry, and advanced calculus, designed to test mathematical reasoning ability.
+
+This is a subset on Challenging problems in counting and probability."
+math_geometry_hard,"Mathematics Aptitude Test of Heuristics (MATH, Level 5) contains high-school competition problems covering complex algebra, geometry, and advanced calculus, designed to test mathematical reasoning ability.
+
+This is a subset on High-difficulty geometry problems requiring reasoning over shapes and theorems."
+math_hard,"Mathematics Aptitude Test of Heuristics (MATH, Level 5) contains high-school competition problems covering complex algebra, geometry, and advanced calculus, designed to test mathematical reasoning ability.
+
+This is a subset on General hard-level math problems covering multiple subfields."
+math_intermediate_algebra_hard,"Mathematics Aptitude Test of Heuristics (MATH, Level 5) contains high-school competition problems covering complex algebra, geometry, and advanced calculus, designed to test mathematical reasoning ability.
+
+This is a subset on Advanced algebraic manipulation and equation reasoning."
+math_num_theory_hard,"Mathematics Aptitude Test of Heuristics (MATH, Level 5) contains high-school competition problems covering complex algebra, geometry, and advanced calculus, designed to test mathematical reasoning ability.
+
+This is a subset on Number theory reasoning and integer property problems."
+math_prealgebra_hard,"Mathematics Aptitude Test of Heuristics (MATH, Level 5) contains high-school competition problems covering complex algebra, geometry, and advanced calculus, designed to test mathematical reasoning ability.
+
+This is a subset on Fundamental arithmetic and pre-algebra reasoning tasks."
+math_precalculus_hard,"Mathematics Aptitude Test of Heuristics (MATH, Level 5) contains high-school competition problems covering complex algebra, geometry, and advanced calculus, designed to test mathematical reasoning ability.
+
+This is a subset on Precalculus reasoning involving functions and analytical geometry."
+MedQA 2-shot,
+MMLU-Pro,"The MMLU-Pro dataset is an enhanced version of the Massive Multitask Language Understanding (MMLU) benchmark. It's designed to be more robust and challenging, aiming to rigorously benchmark large language models' capabilities in language comprehension and reasoning across diverse domains. Here are some key features of the MMLU-Pro dataset: - **Increased Complexity**: It includes more reasoning-focused questions and expands the choice set from four to ten options, reducing the likelihood of random guessing and increasing the evaluation's complexity¹. - **Elimination of Trivial Questions**: MMLU-Pro removes trivial and noisy questions found in the original MMLU, making it a more discriminative benchmark². - **Stability Under Varying Prompts**: The dataset shows greater stability under varying prompts, with a decreased sensitivity of model scores to prompt variations². - **Better Performance with Reasoning**: Models utilizing Chain of Thought (CoT) reasoning achieved better performance on MMLU-Pro compared to direct answering². - **Size and Scope**: The dataset contains 12K complex questions across various disciplines¹⁴. (1) TIGER-Lab/MMLU-Pro · Datasets at Hugging Face. (2) MMLU-Pro: A More Robust and Challenging Multi-Task Language .... (3) MMLU-Pro: An Upgraded Version of the MMLU Dataset | LLM Explorer Blog. (4) TIGER-Lab Introduces MMLU-Pro Dataset for Comprehensive Benchmarking of .... (5) undefined."
+"MMLU-Pro (0-shot, CoT)",
+"MMLU-Pro (3-shot, CoT)",
+musr,"Multistep Soft Reasoning (MuSR) evaluates models’ ability to perform reasoning and understanding over long texts, requiring multi-step inference and long-context comprehension."
+musr_murder_mysteries,"Multistep Soft Reasoning (MuSR) evaluates models’ ability to perform reasoning and understanding over long texts, requiring multi-step inference and long-context comprehension.
+
+This is a subset on Narrative comprehension and reasoning across long mystery texts."
+musr_object_placements,"Multistep Soft Reasoning (MuSR) evaluates models’ ability to perform reasoning and understanding over long texts, requiring multi-step inference and long-context comprehension.
+
+This is a subset on Spatial reasoning about object arrangements and relations."
+musr_team_allocation,"Multistep Soft Reasoning (MuSR) evaluates models’ ability to perform reasoning and understanding over long texts, requiring multi-step inference and long-context comprehension.
+
+This is a subset on Reasoning about constraints and optimization in team allocation tasks."
+NQ,
+OpenBookQA,"OpenBookQA is a multiple-choice question-answering dataset designed to evaluate understanding of elementary-level science through open book exam-style questions. It contains nearly 6,000 questions that require applying a small set of core science facts to novel scenarios, supplemented by broad common knowledge beyond the core facts. The dataset includes training mappings from questions to the core facts they test, as well as crowd-sourced common knowledge facts. It is challenging for simple retrieval or word co-occurrence methods, encouraging development of reasoning and knowledge integration in AI systems."
+OpenBookQA (10-shot),
+OpenBookQA 10-shot,
+PIQA,"PIQA is a dataset for commonsense reasoning, and was created to investigate the physical knowledge of existing models in NLP. Source:"
+PIQA (0-shot),
+PIQA (5-shot),
+PIQA 5-shot,
+PopQA,"PopQA is an open-domain question answering dataset containing approximately 14,000 question-answer pairs. Each pair is annotated with fine-grained Wikidata entity identifiers, Wikipedia page view statistics, and relationship type information, enabling detailed entity-centric reasoning and analysis. The dataset supports research in knowledge-based question answering and entity linking tasks."
+PopQA (15 shot),
+TriviaQA,"TriviaQA is a large-scale text-based question answering dataset containing over 650,000 question-answer pairs with corresponding evidence documents from Wikipedia and the web. It is designed to be more challenging than traditional QA datasets, as answers may not be directly extractable as text spans and require reasoning over long and diverse contexts. The dataset includes both human-verified and automatically generated question-answer pairs, supporting research in complex reading comprehension and open-domain question answering tasks."
+TriviaQA 5-shot,
