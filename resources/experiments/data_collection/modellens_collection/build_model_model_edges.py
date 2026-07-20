@@ -2,7 +2,7 @@
 Build model-model edges from the collected ModelLens triples.
 Two edge sources:
 - Metadata edges: cosine similarity over [family one-hot, log(size)] vectors,from model2family.json + model_profile.json
-- Interaction edges: cosine similarity between models' z-scored accuracy vectors, restricted to datasets they share
+- Interaction edges: cosine similarity between models' z-scored accuracy vectors, restricted to datasets they share.
 """
 import json
 import numpy as np

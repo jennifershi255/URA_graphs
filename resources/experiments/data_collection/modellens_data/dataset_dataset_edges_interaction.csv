@@ -1,0 +1,529 @@
+dataset_a,dataset_b,weight,n_shared_models
+ARC (AI2 Reasoning Challenge),bbh_sports_understanding,0.797579128923755,1
+ARC (AI2 Reasoning Challenge),bbh_movie_recommendation,0.7503429843470946,1
+ARC (AI2 Reasoning Challenge),bbh_disambiguation_qa,0.736134845688285,125
+ARC (AI2 Reasoning Challenge),bbh_boolean_expressions,0.7229990484707577,0
+ARC (AI2 Reasoning Challenge),bbh_date_understanding,0.6973864187496162,1
+ARC (AI2 Reasoning Challenge),bbh_ruin_names,0.6847236437409286,0
+ARC (AI2 Reasoning Challenge),Big-bench Hard,0.6751316403052524,0
+ARC (AI2 Reasoning Challenge),bbh_logical_deduction_five_objects,0.6737259305089125,0
+ARC (AI2 Reasoning Challenge),bbh_causal_judgement,0.6668485960246124,123
+ARC (AI2 Reasoning Challenge),bbh_object_counting,0.6597949638992067,2
+ARC (tr),bbh_tracking_shuffled_objects_three_objects,0.8679659654837922,4
+ARC (tr),bbh_temporal_sequences,0.8142108459504378,0
+ARC (tr),bbh_date_understanding,0.8022971309416288,5
+ARC (tr),GPQA,0.7866294719154114,4
+ARC (tr),bbh_formal_fallacies,0.7822415864548272,4
+ARC (tr),bbh_logical_deduction_five_objects,0.7657569570705436,0
+ARC (tr),bbh_ruin_names,0.7536552969670267,0
+ARC (tr),Big-bench Hard,0.727397282884329,6
+ARC (tr),bbh_hyperbaton,0.7253457219722815,0
+ARC (tr),bbh_causal_judgement,0.5903556322983591,0
+Big-bench Hard,bbh_reasoning_about_colored_objects,0.96454771558367,2192
+Big-bench Hard,MMLU-Pro,0.9588070807495578,2
+Big-bench Hard,bbh_penguins_in_a_table,0.9580943120649902,2230
+Big-bench Hard,bbh_logical_deduction_five_objects,0.9569177984953917,3
+Big-bench Hard,bbh_logical_deduction_seven_objects,0.9528598947846908,4
+Big-bench Hard,bbh_logical_deduction_three_objects,0.9519944287886231,1
+Big-bench Hard,bbh_salient_translation_error_detection,0.9450341438162184,2237
+Big-bench Hard,bbh_ruin_names,0.9207522904620471,2207
+Big-bench Hard,bbh_date_understanding,0.9120673513308745,8
+Big-bench Hard,bbh_snarks,0.8552219333051675,2199
+"BigBenchHard (3 shot, CoT)",PopQA (15 shot),0.9479599457664495,0
+"BigBenchHard (3 shot, CoT)",bbh_disambiguation_qa,0.524553559807684,3
+"BigBenchHard (3 shot, CoT)",bbh_movie_recommendation,0.4594979601970482,0
+"BigBenchHard (3 shot, CoT)",bbh_snarks,0.2720123529784477,0
+"BigBenchHard (3 shot, CoT)",gpqa_diamond,0.27095632945559817,0
+"BigBenchHard (3 shot, CoT)",Big-bench Hard,0.2612916108278806,0
+"BigBenchHard (3 shot, CoT)",bbh_ruin_names,0.2339052388786343,0
+"BigBenchHard (3 shot, CoT)",math_hard,0.21841784711000747,1
+"BigBenchHard (3 shot, CoT)",gpqa,0.20846028166092834,0
+"BigBenchHard (3 shot, CoT)",math_counting_and_prob_hard,0.202481573458789,0
+GPQA,gpqa,0.9468162173941446,2228
+GPQA,gpqa_extended,0.8309870901097475,2243
+GPQA,Big-bench Hard,0.800936672636985,2222
+GPQA,bbh_logical_deduction_three_objects,0.7910725483168068,4
+GPQA,MMLU-Pro,0.789218113830127,1
+GPQA,ARC (tr),0.7866294719154114,5
+GPQA,gpqa_diamond,0.7846784032458726,2284
+GPQA,bbh_logical_deduction_five_objects,0.7727067686605691,2
+GPQA,bbh_logical_deduction_seven_objects,0.7625873847364893,4
+GPQA,bbh_penguins_in_a_table,0.7625500785027653,2266
+MMLU-Pro,Big-bench Hard,0.9588070807495578,2222
+MMLU-Pro,bbh_reasoning_about_colored_objects,0.941851404757737,1
+MMLU-Pro,bbh_penguins_in_a_table,0.9398113644808441,4
+MMLU-Pro,bbh_logical_deduction_three_objects,0.9179471268494518,0
+MMLU-Pro,bbh_logical_deduction_seven_objects,0.914712659314364,1
+MMLU-Pro,bbh_salient_translation_error_detection,0.9146434123449033,2236
+MMLU-Pro,bbh_logical_deduction_five_objects,0.9129127527260869,8
+MMLU-Pro,bbh_date_understanding,0.8897503229634222,1
+MMLU-Pro,bbh_ruin_names,0.8816815414107515,2224
+MMLU-Pro,gpqa,0.8344080784772361,2287
+NQ,PIQA,0.9614338236442177,0
+NQ,bbh_date_understanding,0.7831913836788407,0
+NQ,musr_object_placements,0.7741891513998184,5
+NQ,bbh_geometric_shapes,0.7102394396490087,0
+NQ,bbh_salient_translation_error_detection,0.7069666469390724,0
+NQ,math_algebra_hard,0.6909334609985924,5
+NQ,bbh_ruin_names,0.6754295941962128,0
+NQ,musr_team_allocation,0.6534594217586953,4
+NQ,GPQA,0.6179623576765914,0
+NQ,bbh_temporal_sequences,0.6117064634336493,2
+OpenBookQA,musr_murder_mysteries,0.475174263158125,4
+OpenBookQA,musr_object_placements,0.34403016633016054,4
+OpenBookQA,bbh_tracking_shuffled_objects_seven_objects,0.2469190340263157,5
+OpenBookQA,bbh_tracking_shuffled_objects_five_objects,0.21040581828976962,3
+OpenBookQA,GPQA,0.1512420366270006,0
+OpenBookQA,bbh_formal_fallacies,0.14039284802927623,0
+OpenBookQA,TriviaQA,0.0532092402928723,0
+OpenBookQA,gpqa_diamond,0.01843239752329213,5
+OpenBookQA (10-shot),bbh_tracking_shuffled_objects_five_objects,0.9950351185294525,0
+OpenBookQA (10-shot),bbh_ruin_names,0.829281534248549,2
+OpenBookQA (10-shot),bbh_salient_translation_error_detection,0.8047187309261001,2
+OpenBookQA (10-shot),GPQA,0.758813644987333,5
+OpenBookQA (10-shot),bbh_formal_fallacies,0.697778975454172,1
+OpenBookQA (10-shot),Big-bench Hard,0.6597761270939163,1
+OpenBookQA (10-shot),bbh_tracking_shuffled_objects_seven_objects,0.6327293192640716,1
+OpenBookQA (10-shot),bbh_snarks,0.6260916228109564,1
+OpenBookQA (10-shot),bbh_penguins_in_a_table,0.6125009537262717,1
+OpenBookQA (10-shot),bbh_logical_deduction_seven_objects,0.6115956858067519,1
+PIQA,NQ,0.9614338236442177,0
+PIQA,math_algebra_hard,0.8988745799573545,8
+PIQA,bbh_causal_judgement,0.876224705715256,0
+PIQA,math_geometry_hard,0.8652965569063179,6
+PIQA,bbh_boolean_expressions,0.8592873288506937,8
+PIQA,bbh_sports_understanding,0.8399086775622479,6
+PIQA,math_hard,0.8333350802363217,8
+PIQA,math_intermediate_algebra_hard,0.7918347439386502,7
+PIQA,bbh_navigate,0.7873271717586435,0
+PIQA,math_num_theory_hard,0.7817154163789415,9
+PIQA (5-shot),bbh_snarks,0.9266774865375074,0
+PIQA (5-shot),musr,0.910914532055892,0
+PIQA (5-shot),bbh_logical_deduction_three_objects,0.8897018624369097,0
+PIQA (5-shot),gpqa,0.8494806960414345,0
+PIQA (5-shot),bbh_tracking_shuffled_objects_seven_objects,0.7954379344269861,2
+PIQA (5-shot),musr_object_placements,0.786839257901714,1
+PIQA (5-shot),bbh_logical_deduction_seven_objects,0.7769107986476264,2
+PIQA (5-shot),Big-bench Hard,0.7156621359876194,1
+PIQA (5-shot),gpqa_extended,0.7007131388179486,3
+PIQA (5-shot),GPQA,0.6966927279749011,1
+PopQA,bbh_movie_recommendation,0.9538819348839824,0
+PopQA,bbh_tracking_shuffled_objects_three_objects,0.9454858880366828,0
+PopQA,bbh_ruin_names,0.8952487370512525,0
+PopQA,bbh_tracking_shuffled_objects_seven_objects,0.8669273620108169,0
+PopQA,bbh_logical_deduction_three_objects,0.8595790980528563,0
+PopQA,gpqa_diamond,0.8363087876884305,0
+PopQA,musr,0.8111929039930172,1
+PopQA,bbh_logical_deduction_five_objects,0.7823507287910728,0
+PopQA,Big-bench Hard,0.756764927914543,0
+PopQA,bbh_reasoning_about_colored_objects,0.7184130822532214,0
+PopQA (15 shot),"BigBenchHard (3 shot, CoT)",0.9479599457664495,2
+PopQA (15 shot),musr_team_allocation,0.8403732754470143,4
+PopQA (15 shot),bbh_sports_understanding,0.6226101527321101,4
+PopQA (15 shot),bbh_causal_judgement,0.594783697380043,0
+PopQA (15 shot),bbh_formal_fallacies,0.5591102049311995,2
+PopQA (15 shot),bbh_temporal_sequences,0.5559264084079666,0
+PopQA (15 shot),bbh_tracking_shuffled_objects_five_objects,0.5425129394585663,0
+PopQA (15 shot),bbh_reasoning_about_colored_objects,0.506712754801672,0
+PopQA (15 shot),bbh_penguins_in_a_table,0.4787897592501946,0
+PopQA (15 shot),math_counting_and_prob_hard,0.4728599989260662,3
+TriviaQA,bbh_navigate,0.9910435187458468,0
+TriviaQA,bbh_date_understanding,0.8857716759069222,0
+TriviaQA,math_counting_and_prob_hard,0.856834107826303,4
+TriviaQA,musr_team_allocation,0.7030739911142017,4
+TriviaQA,gpqa_extended,0.5637578215436905,3
+TriviaQA,bbh_geometric_shapes,0.5633747721143705,0
+TriviaQA,bbh_penguins_in_a_table,0.232047695595457,0
+TriviaQA,gpqa,0.21642787211397932,3
+TriviaQA,MMLU-Pro,0.21439946542818697,4
+TriviaQA,bbh_salient_translation_error_detection,0.19921928689546115,0
+bbh_boolean_expressions,PIQA,0.8592873288506937,2
+bbh_boolean_expressions,Big-bench Hard,0.8418285561325582,2197
+bbh_boolean_expressions,MMLU-Pro,0.817383957193148,2
+bbh_boolean_expressions,bbh_penguins_in_a_table,0.8129352132025247,2233
+bbh_boolean_expressions,bbh_reasoning_about_colored_objects,0.8122550187697442,2229
+bbh_boolean_expressions,bbh_date_understanding,0.7994844515328507,1
+bbh_boolean_expressions,bbh_logical_deduction_seven_objects,0.7876925355302058,4
+bbh_boolean_expressions,bbh_logical_deduction_five_objects,0.7848883607273835,1
+bbh_boolean_expressions,bbh_salient_translation_error_detection,0.7834848836664936,2232
+bbh_boolean_expressions,bbh_logical_deduction_three_objects,0.76205742872175,3
+bbh_causal_judgement,PIQA,0.876224705715256,2236
+bbh_causal_judgement,Big-bench Hard,0.813827103379874,2236
+bbh_causal_judgement,bbh_ruin_names,0.794886624567036,2249
+bbh_causal_judgement,bbh_logical_deduction_seven_objects,0.7887611928066476,3
+bbh_causal_judgement,bbh_reasoning_about_colored_objects,0.7839118890533547,2240
+bbh_causal_judgement,bbh_salient_translation_error_detection,0.7775431952033095,2214
+bbh_causal_judgement,bbh_penguins_in_a_table,0.7750420000833301,2790
+bbh_causal_judgement,bbh_sports_understanding,0.7660933660750253,2253
+bbh_causal_judgement,bbh_logical_deduction_five_objects,0.7640210731375794,1
+bbh_causal_judgement,MMLU-Pro,0.7557959214237392,2
+bbh_date_understanding,Big-bench Hard,0.9120673513308745,2218
+bbh_date_understanding,bbh_penguins_in_a_table,0.8908821154335476,2233
+bbh_date_understanding,bbh_logical_deduction_five_objects,0.8907883801800031,2
+bbh_date_understanding,MMLU-Pro,0.8897503229634222,2
+bbh_date_understanding,TriviaQA,0.8857716759069222,1
+bbh_date_understanding,bbh_logical_deduction_seven_objects,0.8750487561314758,0
+bbh_date_understanding,bbh_logical_deduction_three_objects,0.8738109319757899,2
+bbh_date_understanding,bbh_reasoning_about_colored_objects,0.863752548273422,2240
+bbh_date_understanding,bbh_salient_translation_error_detection,0.8617919919685437,2255
+bbh_date_understanding,bbh_geometric_shapes,0.8164160045388991,6
+bbh_disambiguation_qa,Big-bench Hard,0.8035783642705666,2230
+bbh_disambiguation_qa,bbh_salient_translation_error_detection,0.7859711055495895,2261
+bbh_disambiguation_qa,bbh_penguins_in_a_table,0.7769348344729224,2820
+bbh_disambiguation_qa,bbh_logical_deduction_seven_objects,0.7736775428110444,4
+bbh_disambiguation_qa,bbh_logical_deduction_five_objects,0.7680449535723607,3
+bbh_disambiguation_qa,bbh_logical_deduction_three_objects,0.7568974888053552,1
+bbh_disambiguation_qa,bbh_reasoning_about_colored_objects,0.7567942580975622,2216
+bbh_disambiguation_qa,MMLU-Pro,0.7441899645739748,2
+bbh_disambiguation_qa,ARC (AI2 Reasoning Challenge),0.736134845688285,132
+bbh_disambiguation_qa,bbh_ruin_names,0.7246076844409738,2266
+bbh_formal_fallacies,Big-bench Hard,0.8492460922266087,2192
+bbh_formal_fallacies,bbh_logical_deduction_three_objects,0.8347644259230476,3
+bbh_formal_fallacies,bbh_logical_deduction_five_objects,0.8245680334962258,1
+bbh_formal_fallacies,bbh_temporal_sequences,0.8239025542064081,2181
+bbh_formal_fallacies,MMLU-Pro,0.8236303241739901,2
+bbh_formal_fallacies,bbh_penguins_in_a_table,0.8197524692697298,2214
+bbh_formal_fallacies,bbh_logical_deduction_seven_objects,0.7982781820791153,3
+bbh_formal_fallacies,bbh_reasoning_about_colored_objects,0.7915818506896335,2210
+bbh_formal_fallacies,ARC (tr),0.7822415864548272,4
+bbh_formal_fallacies,gpqa,0.7764682996625307,2221
+bbh_geometric_shapes,Big-bench Hard,0.8366006126590174,2207
+bbh_geometric_shapes,MMLU-Pro,0.8204601714328391,2
+bbh_geometric_shapes,bbh_penguins_in_a_table,0.8183779693139321,2248
+bbh_geometric_shapes,bbh_logical_deduction_seven_objects,0.8179059749743042,3
+bbh_geometric_shapes,bbh_salient_translation_error_detection,0.8178963976768935,2791
+bbh_geometric_shapes,bbh_date_understanding,0.8164160045388991,1
+bbh_geometric_shapes,bbh_logical_deduction_five_objects,0.8161406439171667,3
+bbh_geometric_shapes,bbh_logical_deduction_three_objects,0.8159298331805717,3
+bbh_geometric_shapes,bbh_reasoning_about_colored_objects,0.7961681950111545,2266
+bbh_geometric_shapes,bbh_ruin_names,0.7469621825114775,2191
+bbh_hyperbaton,Big-bench Hard,0.7340021596644448,2237
+bbh_hyperbaton,ARC (tr),0.7253457219722815,5
+bbh_hyperbaton,bbh_reasoning_about_colored_objects,0.6965702895940896,2261
+bbh_hyperbaton,bbh_logical_deduction_five_objects,0.6919841456073914,3
+bbh_hyperbaton,bbh_ruin_names,0.6916378268294082,2223
+bbh_hyperbaton,MMLU-Pro,0.678515667269896,2
+bbh_hyperbaton,bbh_logical_deduction_seven_objects,0.6765407367005862,3
+bbh_hyperbaton,bbh_salient_translation_error_detection,0.6712471058359604,2243
+bbh_hyperbaton,bbh_penguins_in_a_table,0.6679247371421088,2246
+bbh_hyperbaton,bbh_logical_deduction_three_objects,0.6625798715481336,4
+bbh_logical_deduction_five_objects,bbh_logical_deduction_three_objects,0.9672467969001761,4
+bbh_logical_deduction_five_objects,bbh_logical_deduction_seven_objects,0.960306843205235,3
+bbh_logical_deduction_five_objects,Big-bench Hard,0.9569177984953917,2199
+bbh_logical_deduction_five_objects,MMLU-Pro,0.9129127527260869,2
+bbh_logical_deduction_five_objects,bbh_penguins_in_a_table,0.9116450632293325,2230
+bbh_logical_deduction_five_objects,bbh_reasoning_about_colored_objects,0.9049048358590974,2207
+bbh_logical_deduction_five_objects,bbh_salient_translation_error_detection,0.8996473324640657,2181
+bbh_logical_deduction_five_objects,bbh_date_understanding,0.8907883801800031,2
+bbh_logical_deduction_five_objects,bbh_ruin_names,0.8660048391050494,2233
+bbh_logical_deduction_five_objects,bbh_snarks,0.8390811759432583,2216
+bbh_logical_deduction_seven_objects,bbh_logical_deduction_five_objects,0.960306843205235,3
+bbh_logical_deduction_seven_objects,Big-bench Hard,0.9528598947846908,2225
+bbh_logical_deduction_seven_objects,bbh_logical_deduction_three_objects,0.9425109978883407,1
+bbh_logical_deduction_seven_objects,bbh_reasoning_about_colored_objects,0.9284581923063366,2243
+bbh_logical_deduction_seven_objects,bbh_penguins_in_a_table,0.920343150079102,2279
+bbh_logical_deduction_seven_objects,bbh_salient_translation_error_detection,0.9202158390058198,2271
+bbh_logical_deduction_seven_objects,MMLU-Pro,0.914712659314364,1
+bbh_logical_deduction_seven_objects,bbh_ruin_names,0.8848443295983734,2247
+bbh_logical_deduction_seven_objects,bbh_date_understanding,0.8750487561314758,9
+bbh_logical_deduction_seven_objects,bbh_geometric_shapes,0.8179059749743042,1
+bbh_logical_deduction_three_objects,bbh_logical_deduction_five_objects,0.9672467969001761,4
+bbh_logical_deduction_three_objects,Big-bench Hard,0.9519944287886231,2251
+bbh_logical_deduction_three_objects,bbh_logical_deduction_seven_objects,0.9425109978883407,4
+bbh_logical_deduction_three_objects,bbh_penguins_in_a_table,0.9192123562239807,2276
+bbh_logical_deduction_three_objects,MMLU-Pro,0.9179471268494518,2
+bbh_logical_deduction_three_objects,bbh_reasoning_about_colored_objects,0.9103322859628309,2237
+bbh_logical_deduction_three_objects,bbh_salient_translation_error_detection,0.9045626565997027,2268
+bbh_logical_deduction_three_objects,PIQA (5-shot),0.8897018624369097,1
+bbh_logical_deduction_three_objects,bbh_date_understanding,0.8738109319757899,8
+bbh_logical_deduction_three_objects,PopQA,0.8595790980528563,1
+bbh_movie_recommendation,PopQA,0.9538819348839824,0
+bbh_movie_recommendation,bbh_date_understanding,0.8123996933505101,0
+bbh_movie_recommendation,Big-bench Hard,0.7824999684822601,2230
+bbh_movie_recommendation,bbh_penguins_in_a_table,0.7537916076243825,2265
+bbh_movie_recommendation,MMLU-Pro,0.7535676315018872,2
+bbh_movie_recommendation,bbh_boolean_expressions,0.7508522704186573,3
+bbh_movie_recommendation,ARC (AI2 Reasoning Challenge),0.7503429843470946,125
+bbh_movie_recommendation,bbh_logical_deduction_five_objects,0.7451526377664766,3
+bbh_movie_recommendation,bbh_salient_translation_error_detection,0.7395650717060964,2262
+bbh_movie_recommendation,bbh_logical_deduction_seven_objects,0.7387471486559957,4
+bbh_navigate,TriviaQA,0.9910435187458468,2245
+bbh_navigate,PIQA,0.7873271717586435,1
+bbh_navigate,Big-bench Hard,0.7536166983553391,2213
+bbh_navigate,MMLU-Pro,0.7451069929024039,1
+bbh_navigate,bbh_logical_deduction_three_objects,0.7444157467863335,2
+bbh_navigate,bbh_penguins_in_a_table,0.7329730539626544,3
+bbh_navigate,bbh_logical_deduction_seven_objects,0.720944294191777,1
+bbh_navigate,bbh_logical_deduction_five_objects,0.7154057003444081,6
+bbh_navigate,bbh_reasoning_about_colored_objects,0.71008943541784,1
+bbh_navigate,bbh_boolean_expressions,0.6914815981787369,1
+bbh_object_counting,bbh_boolean_expressions,0.7464218094696944,4
+bbh_object_counting,Big-bench Hard,0.7436840162306684,2232
+bbh_object_counting,bbh_reasoning_about_colored_objects,0.7256959683243829,2252
+bbh_object_counting,MMLU-Pro,0.7222465674523304,2
+bbh_object_counting,bbh_date_understanding,0.7097701413118737,5
+bbh_object_counting,bbh_penguins_in_a_table,0.700492617439656,2243
+bbh_object_counting,bbh_movie_recommendation,0.6993049360874696,4
+bbh_object_counting,bbh_salient_translation_error_detection,0.6939305478280503,2221
+bbh_object_counting,bbh_logical_deduction_seven_objects,0.6806478436698497,2
+bbh_object_counting,bbh_logical_deduction_five_objects,0.6663769882151425,1
+bbh_penguins_in_a_table,Big-bench Hard,0.9580943120649902,2197
+bbh_penguins_in_a_table,bbh_reasoning_about_colored_objects,0.943321649842231,2214
+bbh_penguins_in_a_table,MMLU-Pro,0.9398113644808441,2
+bbh_penguins_in_a_table,bbh_logical_deduction_seven_objects,0.920343150079102,1
+bbh_penguins_in_a_table,bbh_logical_deduction_three_objects,0.9192123562239807,1
+bbh_penguins_in_a_table,bbh_salient_translation_error_detection,0.9187697415229263,2251
+bbh_penguins_in_a_table,bbh_logical_deduction_five_objects,0.9116450632293325,2
+bbh_penguins_in_a_table,bbh_date_understanding,0.8908821154335476,4
+bbh_penguins_in_a_table,bbh_ruin_names,0.8758982309593946,2218
+bbh_penguins_in_a_table,bbh_formal_fallacies,0.8197524692697298,1
+bbh_reasoning_about_colored_objects,Big-bench Hard,0.96454771558367,2261
+bbh_reasoning_about_colored_objects,bbh_penguins_in_a_table,0.943321649842231,2254
+bbh_reasoning_about_colored_objects,MMLU-Pro,0.941851404757737,2
+bbh_reasoning_about_colored_objects,bbh_salient_translation_error_detection,0.9384369118404297,2236
+bbh_reasoning_about_colored_objects,bbh_logical_deduction_seven_objects,0.9284581923063366,3
+bbh_reasoning_about_colored_objects,bbh_ruin_names,0.9202353535617991,2312
+bbh_reasoning_about_colored_objects,bbh_logical_deduction_three_objects,0.9103322859628309,3
+bbh_reasoning_about_colored_objects,bbh_logical_deduction_five_objects,0.9049048358590974,0
+bbh_reasoning_about_colored_objects,bbh_date_understanding,0.863752548273422,3
+bbh_reasoning_about_colored_objects,bbh_boolean_expressions,0.8122550187697442,5
+bbh_ruin_names,Big-bench Hard,0.9207522904620471,2198
+bbh_ruin_names,bbh_reasoning_about_colored_objects,0.9202353535617991,2199
+bbh_ruin_names,PopQA,0.8952487370512525,1
+bbh_ruin_names,bbh_logical_deduction_seven_objects,0.8848443295983734,3
+bbh_ruin_names,bbh_salient_translation_error_detection,0.8830546637954829,2242
+bbh_ruin_names,MMLU-Pro,0.8816815414107515,1
+bbh_ruin_names,bbh_penguins_in_a_table,0.8758982309593946,2236
+bbh_ruin_names,bbh_logical_deduction_five_objects,0.8660048391050494,4
+bbh_ruin_names,bbh_logical_deduction_three_objects,0.8516464839527114,1
+bbh_ruin_names,OpenBookQA (10-shot),0.829281534248549,2247
+bbh_salient_translation_error_detection,Big-bench Hard,0.9450341438162184,2188
+bbh_salient_translation_error_detection,bbh_reasoning_about_colored_objects,0.9384369118404297,2216
+bbh_salient_translation_error_detection,bbh_logical_deduction_seven_objects,0.9202158390058198,3
+bbh_salient_translation_error_detection,bbh_penguins_in_a_table,0.9187697415229263,2204
+bbh_salient_translation_error_detection,MMLU-Pro,0.9146434123449033,2
+bbh_salient_translation_error_detection,bbh_logical_deduction_three_objects,0.9045626565997027,4
+bbh_salient_translation_error_detection,bbh_logical_deduction_five_objects,0.8996473324640657,2
+bbh_salient_translation_error_detection,bbh_ruin_names,0.8830546637954829,2176
+bbh_salient_translation_error_detection,bbh_date_understanding,0.8617919919685437,1
+bbh_salient_translation_error_detection,bbh_geometric_shapes,0.8178963976768935,3
+bbh_snarks,PIQA (5-shot),0.9266774865375074,2
+bbh_snarks,Big-bench Hard,0.8552219333051675,2213
+bbh_snarks,bbh_logical_deduction_five_objects,0.8390811759432583,3
+bbh_snarks,bbh_logical_deduction_three_objects,0.8374711595137083,2
+bbh_snarks,MMLU-Pro,0.8158594342047276,1
+bbh_snarks,bbh_salient_translation_error_detection,0.8061046703501353,2261
+bbh_snarks,bbh_logical_deduction_seven_objects,0.7973369261969762,1
+bbh_snarks,bbh_penguins_in_a_table,0.7966850850938647,2218
+bbh_snarks,bbh_reasoning_about_colored_objects,0.7923762234852326,2240
+bbh_snarks,bbh_formal_fallacies,0.7758468421925152,1
+bbh_sports_understanding,PIQA,0.8399086775622479,2250
+bbh_sports_understanding,ARC (AI2 Reasoning Challenge),0.797579128923755,121
+bbh_sports_understanding,bbh_ruin_names,0.7907160740167588,2279
+bbh_sports_understanding,Big-bench Hard,0.788735647593009,2244
+bbh_sports_understanding,bbh_causal_judgement,0.7660933660750253,3
+bbh_sports_understanding,bbh_reasoning_about_colored_objects,0.7637446838108669,2258
+bbh_sports_understanding,bbh_salient_translation_error_detection,0.7448708006207797,2276
+bbh_sports_understanding,MMLU-Pro,0.7399206350597342,2
+bbh_sports_understanding,bbh_penguins_in_a_table,0.7318128156781023,2254
+bbh_sports_understanding,bbh_boolean_expressions,0.7314121447976878,1
+bbh_temporal_sequences,bbh_formal_fallacies,0.8239025542064081,6
+bbh_temporal_sequences,Big-bench Hard,0.8193352010633663,2215
+bbh_temporal_sequences,ARC (tr),0.8142108459504378,5
+bbh_temporal_sequences,bbh_logical_deduction_three_objects,0.8080351222153328,3
+bbh_temporal_sequences,gpqa,0.7919601797493437,2237
+bbh_temporal_sequences,bbh_logical_deduction_five_objects,0.7875023095062025,1
+bbh_temporal_sequences,MMLU-Pro,0.7865544385275042,2
+bbh_temporal_sequences,bbh_penguins_in_a_table,0.7744807304268423,2235
+bbh_temporal_sequences,bbh_reasoning_about_colored_objects,0.7718410867130336,2248
+bbh_temporal_sequences,gpqa_extended,0.7675384829708473,2259
+bbh_tracking_shuffled_objects_five_objects,OpenBookQA (10-shot),0.9950351185294525,0
+bbh_tracking_shuffled_objects_five_objects,bbh_tracking_shuffled_objects_seven_objects,0.84287652068925,2255
+bbh_tracking_shuffled_objects_five_objects,bbh_temporal_sequences,0.7230501669839696,2246
+bbh_tracking_shuffled_objects_five_objects,gpqa,0.6061431698238015,2229
+bbh_tracking_shuffled_objects_five_objects,bbh_formal_fallacies,0.6017676503338315,1
+bbh_tracking_shuffled_objects_five_objects,Big-bench Hard,0.5947212329574229,2199
+bbh_tracking_shuffled_objects_five_objects,GPQA,0.5696008613309423,1
+bbh_tracking_shuffled_objects_five_objects,bbh_ruin_names,0.5591136488380938,2220
+bbh_tracking_shuffled_objects_five_objects,bbh_reasoning_about_colored_objects,0.5589574373683853,2199
+bbh_tracking_shuffled_objects_five_objects,bbh_logical_deduction_three_objects,0.5558286193811479,2
+bbh_tracking_shuffled_objects_seven_objects,PopQA,0.8669273620108169,1
+bbh_tracking_shuffled_objects_seven_objects,bbh_tracking_shuffled_objects_five_objects,0.84287652068925,2256
+bbh_tracking_shuffled_objects_seven_objects,PIQA (5-shot),0.7954379344269861,2
+bbh_tracking_shuffled_objects_seven_objects,bbh_temporal_sequences,0.7575100809963127,2230
+bbh_tracking_shuffled_objects_seven_objects,Big-bench Hard,0.6983309867560626,2228
+bbh_tracking_shuffled_objects_seven_objects,bbh_formal_fallacies,0.6917153459583313,7
+bbh_tracking_shuffled_objects_seven_objects,bbh_ruin_names,0.690086448433166,2261
+bbh_tracking_shuffled_objects_seven_objects,bbh_reasoning_about_colored_objects,0.6829503196173872,2254
+bbh_tracking_shuffled_objects_seven_objects,gpqa,0.6583826142926067,2257
+bbh_tracking_shuffled_objects_seven_objects,bbh_logical_deduction_three_objects,0.6507643693224162,2
+bbh_tracking_shuffled_objects_three_objects,PopQA,0.9454858880366828,1
+bbh_tracking_shuffled_objects_three_objects,ARC (tr),0.8679659654837922,3
+bbh_tracking_shuffled_objects_three_objects,NQ,0.5322078056808311,2
+bbh_tracking_shuffled_objects_three_objects,bbh_tracking_shuffled_objects_seven_objects,0.3679484931481613,2267
+bbh_tracking_shuffled_objects_three_objects,bbh_tracking_shuffled_objects_five_objects,0.3665304563798783,2249
+bbh_tracking_shuffled_objects_three_objects,bbh_temporal_sequences,0.27381066844399893,2221
+bbh_tracking_shuffled_objects_three_objects,bbh_formal_fallacies,0.19242543708603835,9
+bbh_tracking_shuffled_objects_three_objects,bbh_hyperbaton,0.1752035865615006,3
+bbh_tracking_shuffled_objects_three_objects,bbh_ruin_names,0.1629552348588559,2245
+bbh_tracking_shuffled_objects_three_objects,bbh_web_of_lies,0.14393225413894392,2239
+bbh_web_of_lies,PIQA (5-shot),0.6760251844673429,2214
+bbh_web_of_lies,bbh_formal_fallacies,0.6148903577926339,4
+bbh_web_of_lies,math_intermediate_algebra_hard,0.5735428613907628,2221
+bbh_web_of_lies,PopQA,0.5626904457775976,2
+bbh_web_of_lies,math_precalculus_hard,0.549124211983478,2212
+bbh_web_of_lies,math_num_theory_hard,0.5458062205835321,2215
+bbh_web_of_lies,math_counting_and_prob_hard,0.5409967093115031,2187
+bbh_web_of_lies,math_geometry_hard,0.5332252774682044,2224
+bbh_web_of_lies,bbh_temporal_sequences,0.5232353503255873,2215
+bbh_web_of_lies,gpqa,0.5231764477399534,2247
+gpqa,gpqa_extended,0.9497591623929453,2191
+gpqa,GPQA,0.9468162173941446,3
+gpqa,gpqa_diamond,0.8772049114591634,2214
+gpqa,PIQA (5-shot),0.8494806960414345,1
+gpqa,Big-bench Hard,0.8411176904821156,2202
+gpqa,bbh_logical_deduction_three_objects,0.8389462699575165,1
+gpqa,MMLU-Pro,0.8344080784772361,2
+gpqa,bbh_logical_deduction_five_objects,0.8171738610757316,4
+gpqa,bbh_penguins_in_a_table,0.8104527264062351,2242
+gpqa,bbh_logical_deduction_seven_objects,0.7993866464849961,4
+gpqa_diamond,gpqa,0.8772049114591634,2252
+gpqa_diamond,PopQA,0.8363087876884305,2
+gpqa_diamond,GPQA,0.7846784032458726,3
+gpqa_diamond,gpqa_extended,0.7649140933251176,2278
+gpqa_diamond,Big-bench Hard,0.7529951811148479,2215
+gpqa_diamond,MMLU-Pro,0.7525716219160291,2
+gpqa_diamond,bbh_logical_deduction_three_objects,0.7514427001307216,3
+gpqa_diamond,bbh_logical_deduction_five_objects,0.7318894286247922,0
+gpqa_diamond,bbh_penguins_in_a_table,0.7239233214906432,2230
+gpqa_diamond,bbh_logical_deduction_seven_objects,0.7216902017481819,3
+gpqa_extended,gpqa,0.9497591623929453,2236
+gpqa_extended,GPQA,0.8309870901097475,1
+gpqa_extended,MMLU-Pro,0.7877306682287895,2
+gpqa_extended,bbh_logical_deduction_three_objects,0.7872943807144097,3
+gpqa_extended,Big-bench Hard,0.7841716362371689,2191
+gpqa_extended,bbh_temporal_sequences,0.7675384829708473,2225
+gpqa_extended,bbh_logical_deduction_five_objects,0.7661624877738235,1
+gpqa_extended,gpqa_diamond,0.7649140933251176,2226
+gpqa_extended,bbh_penguins_in_a_table,0.7644812239841574,2245
+gpqa_extended,bbh_formal_fallacies,0.7554696948969402,9
+math_algebra_hard,math_hard,0.9888481199451057,2253
+math_algebra_hard,math_prealgebra_hard,0.9784175762665502,2235
+math_algebra_hard,math_num_theory_hard,0.9481185837841776,2202
+math_algebra_hard,math_counting_and_prob_hard,0.935493523188956,2197
+math_algebra_hard,math_geometry_hard,0.9145589218900753,2219
+math_algebra_hard,math_precalculus_hard,0.900504014913806,2213
+math_algebra_hard,PIQA,0.8988745799573545,2240
+math_algebra_hard,math_intermediate_algebra_hard,0.8961345087906974,2195
+math_algebra_hard,MMLU-Pro,0.7606008300155276,2
+math_algebra_hard,bbh_logical_deduction_three_objects,0.7425195679526465,3
+math_counting_and_prob_hard,math_num_theory_hard,0.9701817670737476,2247
+math_counting_and_prob_hard,math_hard,0.9696617869981862,2257
+math_counting_and_prob_hard,math_geometry_hard,0.9554781358793416,2226
+math_counting_and_prob_hard,math_intermediate_algebra_hard,0.9489893632160881,2299
+math_counting_and_prob_hard,math_precalculus_hard,0.9381056060573751,2261
+math_counting_and_prob_hard,math_algebra_hard,0.935493523188956,2294
+math_counting_and_prob_hard,math_prealgebra_hard,0.913843128671222,2223
+math_counting_and_prob_hard,TriviaQA,0.856834107826303,0
+math_counting_and_prob_hard,bbh_formal_fallacies,0.7219578569947266,1
+math_counting_and_prob_hard,bbh_logical_deduction_three_objects,0.693127005839128,2
+math_geometry_hard,math_num_theory_hard,0.9577366351870976,2260
+math_geometry_hard,math_counting_and_prob_hard,0.9554781358793416,2279
+math_geometry_hard,math_hard,0.9530871321437177,2181
+math_geometry_hard,math_intermediate_algebra_hard,0.950966900783023,2227
+math_geometry_hard,math_precalculus_hard,0.9401037997115752,2226
+math_geometry_hard,math_algebra_hard,0.9145589218900753,2228
+math_geometry_hard,math_prealgebra_hard,0.8849538527043632,2236
+math_geometry_hard,PIQA,0.8652965569063179,2227
+math_geometry_hard,bbh_formal_fallacies,0.6744921367380069,5
+math_geometry_hard,bbh_logical_deduction_three_objects,0.6497821039524307,1
+math_hard,math_algebra_hard,0.9888481199451057,2216
+math_hard,math_num_theory_hard,0.9763682304035106,2195
+math_hard,math_prealgebra_hard,0.9748474593846036,2249
+math_hard,math_counting_and_prob_hard,0.9696617869981862,2193
+math_hard,math_geometry_hard,0.9530871321437177,2214
+math_hard,math_precalculus_hard,0.9394765891414462,2231
+math_hard,math_intermediate_algebra_hard,0.9368530664640329,2226
+math_hard,PIQA,0.8333350802363217,1
+math_hard,MMLU-Pro,0.7451401861730858,1
+math_hard,bbh_logical_deduction_three_objects,0.7350742216185921,4
+math_intermediate_algebra_hard,math_precalculus_hard,0.9543246957005617,2215
+math_intermediate_algebra_hard,math_geometry_hard,0.950966900783023,2261
+math_intermediate_algebra_hard,math_num_theory_hard,0.9497289548092441,2221
+math_intermediate_algebra_hard,math_counting_and_prob_hard,0.9489893632160881,2187
+math_intermediate_algebra_hard,math_hard,0.9368530664640329,2208
+math_intermediate_algebra_hard,math_algebra_hard,0.8961345087906974,2242
+math_intermediate_algebra_hard,math_prealgebra_hard,0.860201128353102,2255
+math_intermediate_algebra_hard,PIQA,0.7918347439386502,2241
+math_intermediate_algebra_hard,bbh_formal_fallacies,0.7001200534008166,4
+math_intermediate_algebra_hard,bbh_logical_deduction_three_objects,0.6523898138043462,1
+math_num_theory_hard,math_hard,0.9763682304035106,2247
+math_num_theory_hard,math_counting_and_prob_hard,0.9701817670737476,2189
+math_num_theory_hard,math_geometry_hard,0.9577366351870976,2233
+math_num_theory_hard,math_intermediate_algebra_hard,0.9497289548092441,2221
+math_num_theory_hard,math_algebra_hard,0.9481185837841776,2210
+math_num_theory_hard,math_precalculus_hard,0.9428537529452776,2219
+math_num_theory_hard,math_prealgebra_hard,0.9259445229078591,2242
+math_num_theory_hard,PIQA,0.7817154163789415,1
+math_num_theory_hard,bbh_formal_fallacies,0.7328041131113857,8
+math_num_theory_hard,bbh_logical_deduction_three_objects,0.7070541746847601,4
+math_prealgebra_hard,math_algebra_hard,0.9784175762665502,2290
+math_prealgebra_hard,math_hard,0.9748474593846036,2268
+math_prealgebra_hard,math_num_theory_hard,0.9259445229078591,2276
+math_prealgebra_hard,math_counting_and_prob_hard,0.913843128671222,2273
+math_prealgebra_hard,math_geometry_hard,0.8849538527043632,2223
+math_prealgebra_hard,math_precalculus_hard,0.8738197048642896,2279
+math_prealgebra_hard,math_intermediate_algebra_hard,0.860201128353102,2303
+math_prealgebra_hard,MMLU-Pro,0.7943388652378622,2
+math_prealgebra_hard,Big-bench Hard,0.7636523241696315,2258
+math_prealgebra_hard,bbh_logical_deduction_three_objects,0.7620735627484183,3
+math_precalculus_hard,math_intermediate_algebra_hard,0.9543246957005617,2210
+math_precalculus_hard,math_num_theory_hard,0.9428537529452776,2195
+math_precalculus_hard,math_geometry_hard,0.9401037997115752,2207
+math_precalculus_hard,math_hard,0.9394765891414462,2251
+math_precalculus_hard,math_counting_and_prob_hard,0.9381056060573751,2191
+math_precalculus_hard,math_algebra_hard,0.900504014913806,2200
+math_precalculus_hard,math_prealgebra_hard,0.8738197048642896,2209
+math_precalculus_hard,bbh_formal_fallacies,0.7230550281289442,8
+math_precalculus_hard,PIQA,0.6870503256741403,2228
+math_precalculus_hard,MMLU-Pro,0.679556047012434,2
+musr,PIQA (5-shot),0.910914532055892,2226
+musr,PopQA,0.8111929039930172,2
+musr,musr_team_allocation,0.8111897858749394,2220
+musr,musr_object_placements,0.7590791834755481,2185
+musr,gpqa,0.7097696416816801,2242
+musr,bbh_logical_deduction_three_objects,0.7091426449477338,1
+musr,Big-bench Hard,0.7038842019899667,2207
+musr,GPQA,0.6909707560306456,1
+musr,MMLU-Pro,0.6905649145748548,1
+musr,bbh_logical_deduction_five_objects,0.6895397624998357,2
+musr_murder_mysteries,musr,0.6627774987879984,2237
+musr_murder_mysteries,Big-bench Hard,0.6562136384398344,2199
+musr_murder_mysteries,PIQA,0.6491664203484909,1
+musr_murder_mysteries,bbh_salient_translation_error_detection,0.6438057405034149,2208
+musr_murder_mysteries,bbh_reasoning_about_colored_objects,0.642636927763587,2
+musr_murder_mysteries,bbh_causal_judgement,0.6300783623939825,1
+musr_murder_mysteries,MMLU-Pro,0.610069427341881,2
+musr_murder_mysteries,bbh_ruin_names,0.6094359541200816,1
+musr_murder_mysteries,bbh_penguins_in_a_table,0.6090991282246415,2
+musr_murder_mysteries,bbh_logical_deduction_seven_objects,0.6044875962176953,7
+musr_object_placements,PIQA (5-shot),0.786839257901714,2265
+musr_object_placements,NQ,0.7741891513998184,2
+musr_object_placements,musr,0.7590791834755481,2261
+musr_object_placements,PopQA,0.672792954910463,2
+musr_object_placements,GPQA,0.5670907753547262,2245
+musr_object_placements,gpqa,0.5544097805863554,2270
+musr_object_placements,musr_murder_mysteries,0.5355033424260407,2250
+musr_object_placements,gpqa_diamond,0.5254153522863851,2264
+musr_object_placements,ARC (AI2 Reasoning Challenge),0.5224542753474427,128
+musr_object_placements,bbh_disambiguation_qa,0.5104236606653392,4
+musr_team_allocation,PopQA (15 shot),0.8403732754470143,1
+musr_team_allocation,musr,0.8111897858749394,2185
+musr_team_allocation,PIQA,0.7069077097479883,2216
+musr_team_allocation,TriviaQA,0.7030739911142017,1
+musr_team_allocation,NQ,0.6534594217586953,1
+musr_team_allocation,bbh_formal_fallacies,0.5438745306559359,8
+musr_team_allocation,bbh_logical_deduction_three_objects,0.5362638009925037,3
+musr_team_allocation,bbh_penguins_in_a_table,0.5269786679624242,2192
+musr_team_allocation,ARC (tr),0.5215676367312471,4
+musr_team_allocation,bbh_temporal_sequences,0.5166944121594745,2193
