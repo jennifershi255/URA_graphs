@@ -102,7 +102,11 @@ class GraphAttributes():
             data_target.append(q)
             attr.append(1 - similarity)  ## distance (smaller the better); similarity (higher the better ~ accuracy)
 
-        attr = np.asarray([(float(i) - min(attr)) / (max(attr) - min(attr)) for i in attr])
+        attr_range = max(attr) - min(attr) if len(attr) > 0 else 0
+        if attr_range == 0:
+            attr = np.zeros(len(attr))
+        else:
+            attr = np.asarray([(float(i) - min(attr)) / attr_range for i in attr])
         index = np.where(attr > (1 - threshold))
         attr = attr[index]
 
@@ -590,8 +594,6 @@ class GraphAttributesWithDomainSimilarity(GraphAttributes):
             except Exception as e:
                 logger.warning(e)
                 logger.warning(f"No embedding available for {dataset_name} at path {path}, removing node.")
-                del self.dataset_list[ori_dataset_name]
-                continue
                 features = np.zeros((1, self.FEATURE_DIM))
 
             features = np.mean(features, axis=0)
